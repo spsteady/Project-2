@@ -1,0 +1,426 @@
+/* BASE ELEMENT STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  background-color: papayawhip;
+  color: rgb(73, 72, 72);
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* ***************************************************** */
+
+/* NAVIGATION */
+
+.name {
+  font-size: 1em;
+  padding-top: .5em;
+}
+nav a {
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-top: .3em;
+  margin-bottom: .3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: .6em;
+  font-weight: bolder;
+  background-color: rgb(232, 114, 114);
+}
+
+a {
+  color:rgba(73, 69, 69, 0.727);
+}
+
+a:link {
+  color: rgba(73, 69, 69, 0.727);
+}
+
+
+a:hover {
+  color: yellowgreen;
+}
+
+a:active {
+  color: blue;
+}
+
+/* ***************************************************** */
+
+/* PROFILE SECTION */
+
+.wrapper {
+  width: 90%;
+  margin: 2.5em auto;
+  font-size: .6em;
+}
+
+.wrapper p {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 1.8em;
+  color:rgba(157, 152, 152, 1.0);
+}
+
+.wrapper img {
+  width: 75%;
+}
+
+/* ***************************************************** */
+
+/* MAIN CONTENT */
+
+.start-portfolio {
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+  padding: .5em .5em;
+}
+
+section h3 {
+  margin-top: 1.6em;
+  font-size: 1.3em;
+}
+
+section p {
+  margin-left: .8em;
+  margin-right: .8em;
+}
+
+section {
+  font-size: .6em;
+  margin-bottom: 1.4em;
+  letter-spacing: .5px;
+}
+
+/* ***************************************************** */
+
+/* CONTACT SECTION */
+.skill-head {
+  color: black;
+  font-size: .6em;
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+
+.skill-list li {
+  text-transform: inherit;
+  font-size: .6em;
+}
+.contact {
+  padding-bottom: 3.5em;
+  padding-top: 3.5em;
+  margin-left: .9em;
+  margin-right: .9em;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  font-size: .6em;
+}
+
+.contact-info li {
+  text-transform: inherit;
+  padding-top: 1.2em;
+  font-size: .7em;
+  color: rgb(157, 152, 152);
+
+}
+
+.contact p {
+  font-size: .7em;
+  color: rgba(157, 152, 152, 0.864);
+}
+
+.contact-info a {
+  padding-left: 3px;
+  letter-spacing: .5px;
+  color: rgb(63, 57, 57);
+  font-weight: bolder;
+}
+
+/* ***************************************************** */
+
+/* HORIZONTAL LINE FOR CONTACT & FOOTER DISTINCTION */
+
+hr {
+  width: 90%;
+}
+
+/* ***************************************************** */
+
+/* FOOTER */
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20%;
+  padding-top: 1.5%;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.footer-name {
+  float: left;
+  font-size: .6em;
+}
+
+.btt {
+  float: right;
+  font-size: .6em;
+  padding-top: .9em;
+}
+
+/* ***************************************************** */
+
+/* CLEARFIX */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ***************************************************** */
+
+/* MEDIA QUERY - (MOBILE - 768PX) */
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;              /* </CONTAINER> */
+    margin: 0 auto;
+  }
+
+  .main-nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: .9em;
+    padding-top: 1.0em;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    font-weight: bold;       /* </NAVIGATION> */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: .3em;
+    margin-right: .3em;
+    font-size: .6em;
+    background-color: inherit;
+  }
+
+  .wrapper {                  /* **************** */
+    display: inline-block;
+    width: 90%;
+  }
+                              
+  .wrapper p {
+    text-align: left;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.8em;
+    float: left;              /* </WRAPPER> */
+    width: 60%;
+    margin-top: 0;            
+    padding-right: .9em;
+  }
+
+  .wrapper img {
+    float: right;
+    width: 40%;
+    padding-top: 0;           /* **************** */
+  }
+
+  .col {                      /* **************** */
+    width: 100%;
+  }
+
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {               /* </CONTAINER> */
+    float: left;
+    width: 50%;
+    padding: .9em;
+    font-size: .6em;
+  }
+
+  main p {
+    padding-left: .5em;
+    padding-right: .5em;
+    letter-spacing: .3px;    
+  }                           /* **************** */
+
+  .contact {                  /* **************** */
+    width: 68%;               /* </CONTACT> */
+    margin: 0 auto;           /* **************** */
+  }
+
+  .contact h2 {
+    margin-bottom: 2.5em;
+  }
+
+  .contact a {
+    font-weight: bolder;
+  }
+
+  hr {
+    width: 90%;               /* </HORIZONTAL LINE */
+  }
+
+  .btt {
+    displaY: none;
+  }
+
+  .footer-nav {
+    display: block;
+    float: right;
+    padding-right: 0;
+    margin-top: .05em;
+  }
+
+  footer {
+    padding-bottom: 95px;
+  }
+
+  .footer-name {
+    padding-top: .5em;
+    margin-top: .2em;
+  }
+
+  footer li {
+    display: inline;
+    font-size: .6em;
+    margin-left: 1.2em;
+    font-weight: bold;
+  }
+}
+
+/* ************************************************* */
+
+
+/* MEDIA QUERY - (DESKTOP - 1024PX) */
+
+@media (min-width: 1024px) {
+  .main-header {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1.5em;
+  }
+
+  .container,
+  footer,
+  hr {
+    width: 90%;
+    max-width: 1150px;
+  }
+
+  .name{
+    float: left;
+    padding-top: 1.3em;
+    padding-right: 30%;
+  }
+
+  .main-nav {
+    float: right;
+    text-align: right;
+    margin-left: -50%;
+    padding-top: .85em;    
+  }
+
+  .main-nav ul {
+    display: inline;
+  }
+
+  .main-nav li {
+    margin-right: .9em;
+    font-size: .7em; 
+    font-weight: bolder;
+  }
+
+  main h2 {
+    margin-top: 4.78em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+  }
+
+  .wrapper {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: .75em;
+    width: 90%;
+    max-width: 1150px;
+    margin-top: 1.0em;
+    margin-bottom: -.5em;
+  }
+
+  .col {
+    width: 33.3333%;
+    display: inline-block;
+  }
+
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {             
+    float: left;
+    width: 33.333%;
+    padding: .8em;
+    font-size: .6em;
+  }
+
+  main p {
+    padding-left: .1em;
+    padding-right: .1em;
+    letter-spacing: .2px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+  }
+
+  .contact p {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+}
+
+
+
